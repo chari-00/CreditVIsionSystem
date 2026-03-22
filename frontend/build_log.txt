@@ -1,0 +1,29 @@
+
+> creditvision-frontend@3.0.0 build
+> vite build
+
+[36mvite v5.4.21 [32mbuilding for production...[36m[39m
+transforming...
+[32mΓ£ô[39m 1599 modules transformed.
+x Build failed in 1.67s
+error during build:
+src/pages/admin/DataMonitoring.jsx (4:9): "getAllApplicants" is not exported by "src/services/api.js", imported by "src/pages/admin/DataMonitoring.jsx".
+file: C:/Users/hailq/Music/CV-UTS/frontend/src/pages/admin/DataMonitoring.jsx:4:9
+
+2: import { useState, useEffect } from 'react';
+3: import { Database, Search, Filter, RefreshCw, ChevronDown } from 'lucide-react';
+4: import { getAllApplicants } from '../../services/api';
+            ^
+5: import ApplicantModal from '../../components/ApplicantModal';
+6: import RiskMeter, { getColor, getLabel } from '../../components/RiskMeter';
+
+    at getRollupError (file:///C:/Users/hailq/Music/CV-UTS/frontend/node_modules/rollup/dist/es/shared/parseAst.js:402:41)
+    at error (file:///C:/Users/hailq/Music/CV-UTS/frontend/node_modules/rollup/dist/es/shared/parseAst.js:398:42)
+    at Module.error (file:///C:/Users/hailq/Music/CV-UTS/frontend/node_modules/rollup/dist/es/shared/node-entry.js:17040:16)
+    at Module.traceVariable (file:///C:/Users/hailq/Music/CV-UTS/frontend/node_modules/rollup/dist/es/shared/node-entry.js:17452:29)
+    at ModuleScope.findVariable (file:///C:/Users/hailq/Music/CV-UTS/frontend/node_modules/rollup/dist/es/shared/node-entry.js:15070:39)
+    at FunctionScope.findVariable (file:///C:/Users/hailq/Music/CV-UTS/frontend/node_modules/rollup/dist/es/shared/node-entry.js:5673:38)
+    at FunctionBodyScope.findVariable (file:///C:/Users/hailq/Music/CV-UTS/frontend/node_modules/rollup/dist/es/shared/node-entry.js:5673:38)
+    at ReturnValueScope.findVariable (file:///C:/Users/hailq/Music/CV-UTS/frontend/node_modules/rollup/dist/es/shared/node-entry.js:5673:38)
+    at FunctionBodyScope.findVariable (file:///C:/Users/hailq/Music/CV-UTS/frontend/node_modules/rollup/dist/es/shared/node-entry.js:5673:38)
+    at BlockScope.findVariable (file:///C:/Users/hailq/Music/CV-UTS/frontend/node_modules/rollup/dist/es/shared/node-entry.js:5673:38)
